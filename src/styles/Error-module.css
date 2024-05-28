@@ -1,0 +1,26 @@
+.Error-top {
+  font-family: "Bungee", sans-serif;
+  font-size: 15px;
+  color: black;
+  background-image: url("/src/assets/images/sleep.png");
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: #e0091d;
+  text-transform: uppercase;
+  background-color: rgb(209, 201, 201);
+}
+
+.error-logo img {
+  max-width: 260px;
+}
+
+.text-error {
+  font-family: "system-ui", Times, serif;
+  color: black;
+  text-transform: none;
+  font-size: 25px;
+}

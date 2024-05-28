@@ -1,0 +1,494 @@
+@import url(https://db.onlinewebfonts.com/c/20be18dd6a5d5e145567293c34649c1d?family=The+Hand+W00+Black);
+
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9d2e;
+  border-radius: 4rem;
+}
+
+body {
+  font-family: "The Hand W00 Black", sans-serif;
+  color: #fff;
+  font-size: 25px;
+}
+
+header {
+  background: #121618;
+  padding: 50px 80px;
+}
+
+.header-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule img {
+  max-width: 120px;
+}
+
+.schedule-right .phone {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #ffc851;
+}
+
+.schedule-right {
+  color: #888888;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo img {
+  max-width: 280px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.nav li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 3px;
+  transition: 0.25s;
+  transition: transform 0.32s ease-in-out;
+  font-size: 30px;
+}
+.grupo-2:hover a {
+  color: #ffc851;
+}
+.nav li a:hover {
+  color: #ffc851;
+  transform: translateY(-5px);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #24e9df);
+}
+.schedule img:hover {
+  filter: drop-shadow(0 0 0.3em #24e9df);
+}
+
+.nav li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 1px;
+  background: #dce4e8;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  transition: 0.25s;
+  transition: transform 0.32s ease-in-out;
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 25%;
+  border: #fff solid 1px;
+  margin-right: 10px;
+  background-color: #000;
+  color: #ffc851;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.facebook-icon:hover,
+.instagram-icon:hover,
+.twitter-icon:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 0 0.5em #24e9df);
+  transition: transform 0.32s ease-in-out, filter 0.5s ease-in-out;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 786px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #dce4e8;
+  margin: 5px;
+}
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.menu-btn.active span:nth-child(2) {
+  display: none;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-5px);
+}
+.hero {
+  min-height: 100vh;
+  background: url(/src/assets/images/base-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-position-y: 15%;
+  margin-top: 20px;
+}
+
+.imgBx img {
+  max-width: 600px;
+  filter: drop-shadow(5px 15px 20px #000000);
+}
+
+.contentBx {
+  max-width: 900px;
+  margin-right: 50px;
+}
+
+.contentBx h1 {
+  font-size: 30px;
+  color: #000000;
+  font-family: "Bungee", sans-serif;
+}
+.Text-mod,
+h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.contentBx h2 {
+  font-size: 30px;
+  font-weight: 350;
+  letter-spacing: 3px;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.contentBx p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 350;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.contentBx .btn {
+  padding: 10px 20px;
+  background: #ffc851;
+  display: inline-block;
+  color: #ffffff;
+  letter-spacing: 2px;
+  border: 2px solid #ffc851;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.contentBx .btn:hover {
+  background: transparent;
+  color: #ffc851;
+}
+
+#contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services {
+  text-align: center;
+  background-image: url("/src/assets/images/patron1.png");
+  position: relative;
+  background-position: center;
+  background-color: #121618;
+  background-size: cover;
+  padding: 30px 30px;
+}
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  transition: 200ms;
+  color: #000000;
+  background-color: #f1faee;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: transform 0.32s ease-in-out;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.tarjeta img {
+  margin-bottom: 5px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.tarjeta p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+.tarjeta div {
+  background-color: #ffba24;
+  padding: 20px;
+  border-radius: 10px;
+}
+.tarjeta:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 50px 50px;
+  }
+
+  .nav li {
+    margin: 0 10px;
+  }
+
+  .imgBx img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 30px 50px;
+  }
+
+  .header-top {
+    justify-content: center;
+  }
+
+  .schedule,
+  .cart {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imgBx {
+    margin-bottom: 30px;
+  }
+
+  .contentBx {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+.pie-pagina {
+  background-image: url("/src/assets/images/patron1.png");
+  position: relative;
+  background-position: center;
+  background-color: #121618;
+  background-size: cover;
+  padding: 30px 30px;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-family: "The Hand W00 Black", sans-serif;
+}
+.box {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+  color: #ffc851;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.red-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 25%;
+  border: #fff solid 1px;
+  margin-right: 10px;
+  background-color: #000;
+  color: #ffc851;
+  transition: background-color 0.3s, color 0.3s;
+}
+.red-social a:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 0 0.5em #24e9df);
+  transition: transform 0.32s ease-in-out, filter 0.5s ease-in-out;
+  transition: 0.25s;
+}
+.grupo-2 {
+  background-color: #242525;
+  padding: 30px 15px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 30px;
+  max-width: 100%;
+  background-image: url("/src/assets/images/papas-2.png");
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: space;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #000;
+  font-weight: 400;
+}
+.box-img:hover {
+  filter: drop-shadow(0 0 1em #24e9df);
+}
+
+@media screen and (max-width: 786px) {
+  header {
+    padding: 60px 20px;
+    padding-bottom: 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    margin-top: 60px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff50;
+    display: block;
+  }
+
+  .nav li {
+    margin: 15px 0;
+  }
+
+  .nav li a.active::after {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero {
+    padding: 90px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .imgBx img {
+    max-width: 300px;
+  }
+
+  .contentBx h1 {
+    font-size: 40px;
+  }
+
+  .contentBx h2 {
+    font-size: 25px;
+  }
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.about {
+  background-image: url("/src/assets/images/patron1.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #121618;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;
+}
+
+.container h2 {
+  color: #bf101e;
+  font-size: 50px;
+  padding: 10px;
+  letter-spacing: 2px;
+  line-height: 60px;
+  text-align: center;
+}
+.container p {
+  color: #ffffff;
+  font-family: "roboto", Arial, Tahoma, Verdana;
+  font-weight: 200;
+  clear: both;
+  font-size: 18px;
+  line-height: 24px;
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+.mision {
+  font-size: 40px;
+  color: #bf101e;
+  text-align: center;
+}
+.papas {
+  max-width: 100px;
+  filter: drop-shadow(0 0 2em #24e9df);
+}

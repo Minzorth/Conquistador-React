@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/assets/images/san-3.png");
+  background-position: center;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: #e0091d;
+  text-transform: uppercase;
+  background-color: #121618;
+  background-repeat: no-repeat;
+}
+
+.loader-text {
+  margin-left: 40px;
+  font-size: 30px;
+  animation: scaleAnimation 1s infinite alternate;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 560px) {
+  .loader-text {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}

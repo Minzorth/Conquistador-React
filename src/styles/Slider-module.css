@@ -1,0 +1,63 @@
+.slider-container {
+  position: relative;
+  max-width: 450px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border: #fff solid 1px;
+}
+
+.slider-container-wrapper {
+  background-image: url("/src/assets/images/patron1.png");
+  position: relative;
+  background-position: center;
+  background-color: #121618;
+  filter: brightness(100%);
+  background-size: cover;
+  padding: 30px 30px;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+}
+.slider-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
